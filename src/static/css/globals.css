@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Griffy|Yanone+Kaffeesatz:400,700');
+
+html,body{
+    height: 100%;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    background: mintcream;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/*Generic CSS Classes*/
+.cap{text-transform: capitalize;}
+.mb20{margin-bottom:2rem}
+.mt20{margin-top:2rem}
+.fz35{font-size: 3.5rem}
+.fz30{font-size: 3rem}
+.fz25{font-size: 2.5rem}
+
+.hbox{ display: flex }
+.vbox{
+    display: flex;
+    flex-direction: column;
+}
+.space-between, .sb{ justify-content: space-between}
+.space-around, .sa{ justify-content: space-around}
+.align-items-center, .ai-center, .aic{align-items: center}
+.align-items-start, .ai-start, .ais {align-items: flex-start}
+.grow-1,.g1{flex-grow: 1;}
+.text-left,.tl{text-align: left}
+.dev{border:fuchsia 2px dashed}
+
+
+/*Custom*/
+/*--------------------*/
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.app{
+    width: 100%;
+    padding: 15rem 7rem 3rem; 
+    border-radius:.8rem;
+}
+
+.top-bar{
+    background: slategray;
+    width:100%;
+    height: 70px;
+    padding: 20px;
+    color: white;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+}
+
+.top-bar h1{
+    font-size: 3rem;
+    font-weight:normal;
+    font-family: 'Griffy', cursive;
+    color:papayawhip;
+}
+
+.logo{
+    height: 5rem;
+}
+
+.profiles-list {
+    width: 50%;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.card-area {
+    width: 50%;
+    float: right;
+    padding: 2rem;
+}
+
+.profile {
+    display: inline-block;
+    background: lightskyblue;
+    width: 25%;
+    padding: 3rem;
+    margin: 2rem;
+    cursor: pointer;    
+}
+
+.profImg {
+    width: 100%;
+}
+
+.profile h3 {
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.profile p {
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.card{
+    background: papayawhip;
+    border-radius: 4px;
+	padding: 3rem;
+}
+
+.cardImg {
+    width: 50%;
+    float: left;
+    margin-right: 3rem;
+}
+
+.card h3 {
+    font-size: 5rem;
+}
+
+.card p {
+    font-size: 3rem;
+}
